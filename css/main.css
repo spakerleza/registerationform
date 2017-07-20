@@ -1,0 +1,192 @@
+@charset 'utf-8';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: rgb(51, 0, 51);
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+
+header {
+    height: 250px;
+    visibility: hidden; 
+}
+
+hgroup {
+    height: 170px;
+    border: 1px solid green;
+    visibility: visible;
+    background: purple;
+}
+
+.image-contaner {
+    height: 250px;
+    display: flex;
+    width: 100%;
+    visibility: visible;
+    text-align: center; 
+}
+
+.headerImage {
+    width: 100%;
+}
+
+.section {
+     background-color: rgb(255, 230, 255);
+}
+
+.headerOne {
+    margin: 1rem 0 0 0;
+    position: relative;
+    width: 100%;
+}
+
+#headerText {
+    display: inline-block;
+    color: #ffffff;
+    background-color: purple;
+    padding: .2rem;
+    position: relative;
+}
+
+#headerLine {
+    height: 2px;
+    position: absolute;
+    top:50%;
+    background-color: purple;
+    width: 100%; 
+}
+
+.formContainer {
+    padding: 1rem;
+    text-align: left; 
+    
+}
+
+.passportContainer {
+    border: 1px solid black;
+}
+
+form > div {
+    
+    padding: 1rem;
+}
+
+.passportContainer {
+    float: right;
+    width: 20%;
+    height: 200px;
+}
+
+.inputContainer {
+    width: 80%;
+    display: flex;
+}
+
+.label {
+    padding: .1rem;
+    margin-right: .3rem; 
+    background-color: rgb(51, 0, 51);
+    color: #ffffff;
+}
+
+.textfield {
+    border: none;
+    border-bottom: 2px solid rgb(51, 0, 51);
+    background: none;
+    width:70%;
+    outline: none;
+    padding: 0;
+}
+
+.formButton {
+    padding: .7em 1rem;
+    border-radius: 4px;
+    border: 1px solid purple;
+    background: #fff;
+    margin-left: auto; 
+    outline: none;
+    cursor: pointer;
+    position: relative;
+}
+.formButton:focus {
+    top: 1px;
+}
+
+.sectionTwo {
+    padding: 0 1rem 2rem 2rem;
+}
+
+.instruction {
+    text-align: left;
+}
+
+.instruction + .instruction {
+    margin-top: 1rem;
+}
+
+.title {
+    font-size: 80%;
+    padding: .7rem 0;
+    text-decoration: underline;
+}
+
+.instructionList {
+    line-height: 2;
+}
+
+#name2 {
+    border-bottom: 2px dotted rgb(51, 0, 51);
+    width: 30%;
+}
+
+#loader {
+    border: 5px solid purple;
+    border-top: 5px solid rgb(51, 0, 51);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin .5s linear infinite;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    display: none;
+}
+
+@keyframes spin {
+    0% { transform:  rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#callback {
+    background: purple;
+    display: inline-block;
+    padding: 1rem 2rem;
+    width: 300px;
+    color: #ffffff;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    display: none;
+}
+
+.cancel {
+    position: absolute;
+    top: 3px;
+    right: 7px;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.cancel:hover {
+    color: red;
+}
